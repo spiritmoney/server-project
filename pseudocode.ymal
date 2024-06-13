@@ -1,0 +1,10 @@
+1. Initialize Node.js project with TypeScript
+2. Install`ethers`
+3. Import necessary modules (`ethers`)
+4. Create or import a wallet with `ethers`
+5. Define the function to be called automatically
+   a. This function could send a transaction or call a smart contract method
+   b. Ensure gas is handled correctly
+6. Schedule the function to be called every midnight UTC
+7. Implement error handling for the scheduled task
+8. Ensure private keys are stored
