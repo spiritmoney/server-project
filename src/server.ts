@@ -9,7 +9,7 @@ const port = 5000; // Port number for the Express server
 app.use(bodyParser.json()); // Middleware to parse JSON bodies
 
 const contractAddress = "0xDd21Cf61DD3e47cEC1bC5190915D726c8B0876C1";
-const url = ""; // Your Ethereum node URL
+const url = "https://sepolia.mode.network";
 
 async function performScheduledTask(privateKey: string) {
   const wallet = new ethers.Wallet(privateKey);
@@ -23,6 +23,10 @@ async function performScheduledTask(privateKey: string) {
   await tx.wait();
   console.log("Transaction sent!");
 }
+
+app.get("/", (req, res) => {
+  res.send("Server running");
+})
 
 // POST endpoint to trigger the scheduled task
 app.post("/performScheduledTask", async (req, res) => {
