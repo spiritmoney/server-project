@@ -4,7 +4,7 @@ import { ethers } from "ethers";
 const abi = require("../src/abi.json");
 
 const app = express();
-const port = 10000; // Port number for the Express server
+const port = 4000; // Port number for the Express server
 
 app.use(bodyParser.json()); // Middleware to parse JSON bodies
 
