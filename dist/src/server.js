@@ -8,7 +8,7 @@ const body_parser_1 = __importDefault(require("body-parser"));
 const ethers_1 = require("ethers");
 const abi = require("../src/abi.json");
 const app = (0, express_1.default)();
-const port = 5000; // Port number for the Express server
+const port = 10000; // Port number for the Express server
 app.use(body_parser_1.default.json()); // Middleware to parse JSON bodies
 const contractAddress = "0xDd21Cf61DD3e47cEC1bC5190915D726c8B0876C1";
 const url = "https://sepolia.mode.network";
